@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+	<meta charset="utf-8">
+	<title>Meghna | Plantilla HTML5 de Parallax multipropósito responsiva</title>
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="Plantilla HTML5 Parallax">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+	<meta name="author" content="Themefisher">
+	<meta name="generator" content="Themefisher Meghna Template v1.0">
+
+	<meta name="theme-name" content="meghna" />
+
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.png" />
+
+	<link rel="stylesheet" href="plugins/themefisher-font/style.css">
+	<link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" href="plugins/animate-css/animate.css">
+	<link rel="stylesheet" href="plugins/magnific-popup/dist/magnific-popup.css">
+	<link rel="stylesheet" href="plugins/slick-carousel/slick.css">
+	<link rel="stylesheet" href="plugins/slick-carousel/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<style>
+		/* Force center alignment for logo in footer */
+		/* Keep logo inline on one line */
+		#footer .copyright .navbar-brand.logo {
+			display: inline-block;
+			white-space: nowrap;
+			margin: 0 auto;
+			text-align: center;
+		}
+
+		/* Ensure all logo elements stay inline */
+		#footer .copyright .logo-apex,
+		#footer .copyright .logo-line,
+		#footer .copyright .logo-construtech {
+			display: inline;
+			white-space: nowrap;
+		}
+
+
+		/* Logo de texto en la navegación */
+		.navbar-brand.logo {
+			display: flex;
+			/* Para alinear los elementos del logo en línea */
+			align-items: center;
+			/* Centrar verticalmente los elementos */
+			text-decoration: none;
+			/* Eliminar el subrayado del enlace */
+			font-size: 24px;
+			/* Tamaño general del logo */
+			font-family: Arial, sans-serif;
+			/* Puedes ajustar la fuente si lo necesitas */
+		}
+
+		.logo-apex {
+			font-weight: bold;
+			color: #ffffff;
+			/* Blanco para "Apex" */
+			margin-right: 5px;
+			/* Espacio entre "Apex" y la línea */
+		}
+
+		.logo-line {
+			display: block;
+			/* Para que la línea tome las propiedades de ancho y alto */
+			width: 3px;
+			/* Ancho de la línea */
+			height: 25px;
+			/* Alto de la línea */
+			background-color: #f9d100;
+			/* Color amarillo de la línea */
+			margin: 0 5px;
+			/* Espacio a ambos lados de la línea */
+		}
+
+		.logo-construtech {
+			font-weight: normal;
+			/* Normal para "Construtech" */
+			color: #ffffff;
+			/* Blanco para "Construtech" */
+			letter-spacing: 1px;
+			/* Espaciado entre letras, como en tu ejemplo */
+		}
+
+		/* Ajustar el logo SVG si por alguna razón vuelve a aparecer, o eliminar si no se usa */
+		.navigation .navbar-brand .logo svg g {
+			stroke: none !important;
+			/* Elimina el borde del SVG si todavía existiera */
+			fill: transparent !important;
+			/* Asegura que el SVG no tenga relleno */
+		}
+		/* Language selector styling */
+#languageDropdown {
+    padding: 0.5rem 1rem;
+}
+
+.dropdown-menu-right {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-item {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #214163;
+    color: #f9d100;
+}
+
+	</style>
+
+</head>
+
+<body id="home" data-spy="scroll" data-target=".navbar-nav" data-offset="80">
+	<div class="preloader">
+		<div class="sk-cube-grid">
+			<div class="sk-cube sk-cube1"></div>
+			<div class="sk-cube sk-cube2"></div>
+			<div class="sk-cube sk-cube3"></div>
+			<div class="sk-cube sk-cube4"></div>
+			<div class="sk-cube sk-cube5"></div>
+			<div class="sk-cube sk-cube6"></div>
+			<div class="sk-cube sk-cube7"></div>
+			<div class="sk-cube sk-cube8"></div>
+			<div class="sk-cube sk-cube9"></div>
+		</div>
+	</div>
+	<section class="hero-area overlay" style="background-image: url('img/2.webp');">
+		<div class="block">
+			<div class="video-button mb-5">
+				<a class="popup-video" href="#inicio">
+					<i class="tf-ion-play"></i>
+				</a>
+			</div>
+			<h1>Construyendo el futuro con tecnología y calidad</h1>
+			<p>En Apex Construtech combinamos experiencia en construcción e ingeniería con los más altos estándares de
+				seguridad, sostenibilidad y calidad. Transformamos proyectos complejos en realidades sólidas.</p>
+			<a href="#services" class="btn btn-transparent smooth-scroll">Explorarnos</a>
+		</div>
+	</section>
+
+<header id="navigation" class="navigation">
+    <div class="container">
+        <div class="navbar-header w-100">
+            <nav class="navbar navbar-expand-lg navbar-dark px-0">
+                <a class="navbar-brand logo" href="index.html">
+                    <span class="logo-apex">Apex</span><span class="logo-line"></span><span
+                        class="logo-construtech">Construtech</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar01"
+                    aria-controls="navbar01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbar01">
+                    <ul class="navbar-nav navigation-menu ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Acerca de</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portafolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-team">Equipo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us">Contacto</a>
+                        </li>
+                        
+                        <!-- Language Selector -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" 
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-globe"></i> ES
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageDropdown">
+                                <a class="dropdown-item" href="#" data-lang="es">
+                                    🇪🇸 Español
+                                </a>
+                                <a class="dropdown-item" href="#" data-lang="en">
+                                    🇬🇧 English
+                                </a>
+                                <a class="dropdown-item" href="#" data-lang="de">
+                                    🇩🇪 Deutsch
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+
+	<section class="bg-one about section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<div class="title text-center wow fadeIn" data-wow-duration="1500ms">
+						<h2>Acerca de <span class="color">Nosotros</span> </h2>
+						<div class="border"></div>
+					</div>
+				</div>
+
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms">
+					<div class="block">
+						<div class="icon-box">
+							<i class="tf-ion-hammer"></i>
+						</div>
+						<div class="content text-center">
+							<h3>Somos expertos</h3>
+							<p>Con años de experiencia en construcción e ingeniería, ofrecemos soluciones integrales que
+								garantizan seguridad, eficiencia y resultados excepcionales en cada proyecto.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="250ms">
+					<div class="block">
+						<div class="icon-box">
+							<i class="tf-ion-lightbulb"></i>
+						</div>
+						<div class="content text-center">
+							<h3>Somos innovadores</h3>
+							<p>Implementamos tecnología de vanguardia en telecomunicaciones e ingeniería para optimizar
+								procesos constructivos y garantizar proyectos sostenibles y duraderos.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 text-center wow fadeInUp" data-wow-duration="500ms" data-wow-delay="500ms">
+					<div class="block kill-margin-bottom">
+						<div class="icon-box">
+							<i class="tf-ion-checkmark-circled"></i>
+						</div>
+						<div class="content text-center">
+							<h3>Somos comprometidos</h3>
+							<p>Nuestro compromiso con la calidad, la seguridad y la satisfacción del cliente nos
+								posiciona como líderes en construcción de infraestructuras y proyectos industriales.</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section class="section about-2 padding-0 bg-dark" id="about">
+		<div class="container-fluid p-0">
+			<div class="row no-gutters align-items-center">
+				<div class="col-lg-6">
+					<img class="img-fluid" src="img/4.webp" alt="">
+				</div>
+				<div class="col-lg-6">
+					<div class="content-block">
+						<h2>Somos Apex Construtech: Obras y Telecomunicaciones</h2>
+						<p>Apex Obras y Telecomunicaciones SL es una empresa especializada en proyectos de construcción
+							e ingeniería industrial con presencia en Europa, ofreciendo servicios integrales desde el
+							diseño hasta la ejecución.</p>
+						<p>Nos dedicamos a desarrollar infraestructuras sostenibles, proyectos de telecomunicaciones y
+							soluciones constructivas que cumplen con los más altos estándares internacionales de calidad
+							y seguridad.</p>
+						<p>Nuestro equipo multidisciplinario trabaja con pasión y profesionalismo para materializar cada
+							visión arquitectónica e ingenieril.</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="media">
+									<div class="pull-left">
+										<i class="tf-ion-ios-gear"></i>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Diseño técnico avanzado</h4>
+										<p>Proyectos diseñados con criterios técnicos avanzados que garantizan
+											eficiencia energética y cumplimiento normativo en todas las fases
+											constructivas.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="media">
+									<div class="pull-left">
+										<i class="tf-ion-wrench"></i>
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">Soluciones personalizadas</h4>
+										<p>Cada proyecto es único. Adaptamos nuestras soluciones de construcción e
+											ingeniería a las necesidades específicas de nuestros clientes en sectores
+											residenciales, comerciales e industriales.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- <section class="call-to-action section-sm bg-1 overly">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<h2>Infraestructura sólida con tecnología de vanguardia</h2>
+					<p> Transformamos espacios con proyectos de construcción e ingeniería que combinan innovación,
+						sostenibilidad y los más altos estándares de calidad. ¿Tienes un proyecto en mente?</p>
+					<a href="contact.html" class="btn btn-main">Inicia tu proyecto con nosotros</a>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<section id="services" class="bg-one section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-12">
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Nuestros <span class="color">Servicios</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-ion-hammer"></i>
+						</div>
+						<h3>Proyectos de Construcción</h3>
+						<p>Desarrollamos proyectos residenciales, comerciales e industriales con altos estándares de
+							calidad, seguridad y sostenibilidad. Desde la planificación hasta la entrega final.</p>
+					</div>
+				</article>
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-ion-settings"></i>
+						</div>
+						<h3>Ingeniería Industrial</h3>
+						<p>Soluciones de ingeniería para proyectos industriales complejos, incluyendo infraestructura,
+							instalaciones especializadas y optimización de procesos constructivos.</p>
+					</div>
+				</article>
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-ion-wifi"></i>
+						</div>
+						<h3>Telecomunicaciones</h3>
+						<p>Diseño e implementación de infraestructura de telecomunicaciones, redes de fibra óptica y
+							sistemas de conectividad para proyectos comerciales y residenciales.</p>
+					</div>
+				</article>
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-ion-clipboard"></i>
+						</div>
+						<h3>Consultoría y Diseño</h3>
+						<p>Asesoramiento técnico especializado en diseño arquitectónico, estructural y de
+							instalaciones, garantizando proyectos eficientes y sostenibles desde su concepción.</p>
+					</div>
+				</article>
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="service-block text-center">
+						<div class="service-icon text-center">
+							<i class="tf-ion-briefcase"></i>
+						</div>
+						<h3>Gestión de Proyectos</h3>
+						<p>Administración integral de proyectos constructivos con control de tiempos, costos y calidad,
+							asegurando el cumplimiento de objetivos y expectativas del cliente.</p>
+					</div>
+				</article>
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="service-block text-center kill-margin-bottom">
+						<div class="service-icon text-center">
+							<i class="tf-ion-wrench"></i>
+						</div>
+						<h3>Mantenimiento Integral</h3>
+						<p>Servicios de mantenimiento preventivo y correctivo para infraestructuras, instalaciones
+							eléctricas, telecomunicaciones y sistemas constructivos especializados.</p>
+					</div>
+				</article>
+
+			</div>
+		</div>
+	</section>
+	<section id="team-skills" class="parallax-section section section-bg overly">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="title text-center">
+						<h2>Nuestras <span class="color">habilidades</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Nuestro equipo técnico multidisciplinario combina conocimientos en arquitectura, ingeniería
+						civil, telecomunicaciones y gestión de proyectos para ofrecer soluciones integrales y
+						eficientes.</h2>
+					<p>Contamos con experiencia demostrada en una amplia gama de especialidades constructivas, desde
+						edificación tradicional hasta proyectos de ingeniería industrial y telecomunicaciones de última
+						generación.</p>
+					<img class="img-fluid" src="images/about/company-growth.png" alt="">
+				</div>
+				<div class="col-md-6 mt-4 mt-md-0">
+					<ul class="skill-bar">
+						<li>
+							<p><span>01-</span> Gestión de Proyectos</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100" style="width:90%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>02-</span> Construcción e Infraestructura</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100" style="width:70%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>03-</span> Ingeniería Industrial</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100" style="width:85%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>04-</span> Telecomunicaciones</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100" style="width:60%">
+								</div>
+							</div>
+						</li>
+						<li>
+							<p><span>04-</span> Sostenibilidad y Eficiencia</p>
+							<div class="progress">
+								<div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+									aria-valuemax="100" style="width:94%">
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="portfolio section" id="portfolio">
+		<div class="container">
+			<div class="row ">
+				<div class="col-lg-12">
+					<div class="title text-center">
+						<h2>Nuestros <span class="color">Trabajos</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="portfolio-filter">
+						<button class="active" type="button" data-filter="all">Todos</button>
+						<button type="button" data-filter="photography">Construcción</button>
+						<button type="button" data-filter="design">Ingeniería</button>
+						<button type="button" data-filter="development">Telecomunicaciones</button>
+					</div>
+				</div>
+			</div>
+			<div class="row mx-auto filtr-container">
+				<div class="filtr-item col-lg-4 col-md-6" data-category="development">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Diseño de etiqueta</a></h4>
+							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="design">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-2.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Sistema de sonido</a></h4>
+							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="design, development">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-3.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Producto reloj</a></h4>
+							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="photography, development">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-4.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Etiqueta de botella</a></h4>
+							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="design">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-5.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Bolsa de compras</a></h4>
+							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="photography">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-6.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Diseño de etiqueta</a></h4>
+							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="design">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-7.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Tarjeta de presentación</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="design">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-8.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Diseño de papelería</a></h4>
+						</div>
+					</div>
+				</div>
+				<div class="filtr-item col-lg-4 col-md-6" data-category="photography, development">
+					<div class="portfolio-block">
+						<img src="img/5.webp" alt="">
+						<div class="caption">
+							<a class="search-icon image-popup" data-effect="mfp-with-zoom"
+								href="images/portfolio/portfolio-1.jpg" data-lightbox="image-1">
+								<i class="tf-ion-android-search"></i>
+							</a>
+							<h4><a href="">Diseño de etiqueta</a></h4>
+							<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nemo!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section id="counter" class="parallax-section bg-1 section overly">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms">
+					<div class="counters-item">
+						<i class="tf-ion-android-happy"></i>
+						<span class="jsCounter" data-count="320">0</span>
+						<h3>Clientes satisfechos</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms"
+					data-wow-delay="200ms">
+					<div class="counters-item">
+						<i class="tf-ion-archive"></i>
+						<span class="jsCounter" data-count="565">0</span>
+						<h3>Proyectos completados</h3>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms"
+					data-wow-delay="400ms">
+					<div class="counters-item">
+						<i class="tf-ion-thumbsup"></i>
+						<span class="jsCounter" data-count="95">0</span>
+						<h3>Comentarios positivos</h3>
+
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12 text-center wow fadeInDown" data-wow-duration="500ms"
+					data-wow-delay="600ms">
+					<div class="counters-item kill-margin-bottom">
+						<i class="tf-ion-coffee"></i>
+						<span class="jsCounter" data-count="2500">0</span>
+						<h3>Tazas de café</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<section id="our-team" class="section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-lg-12">
+					<div class="title text-center wow fadeInUp" data-wow-duration="500ms">
+						<h2>Nuestro <span class="color">Equipo</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+
+				<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms">
+					<div class="team-member">
+						<div class="member-photo">
+							<img class="img-fluid" src="images/team/team-1.jpg" alt="Meghna">
+							<div class="mask">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-facebook"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-twitter"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-linkedin"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i
+												class="tf-ion-social-dribbble-outline"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="member-meta">
+							<h4 class="h5">Abul Mal Muhit</h4>
+							<span>CEO/Fundador</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam,
+								culpa odio.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="team-member">
+						<div class="member-photo">
+							<img class="img-fluid" src="images/team/team-2.jpg" alt="Meghna">
+							<div class="mask">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-facebook"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-twitter"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-linkedin"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i
+												class="tf-ion-social-dribbble-outline"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="member-meta">
+							<h4 class="h5">Frank Miller</h4>
+							<span>Gerente</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam,
+								culpa odio.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="team-member">
+						<div class="member-photo">
+							<img class="img-fluid" src="images/team/team-3.jpg" alt="Meghna">
+							<div class="mask">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-facebook"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-twitter"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-linkedin"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i
+												class="tf-ion-social-dribbble-outline"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="member-meta">
+							<h4 class="h5">Michael Jonson</h4>
+							<span>Desarrollador web</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam,
+								culpa odio.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6 wow fadeIn" data-wow-duration="500ms" data-wow-delay="600ms">
+					<div class="team-member">
+						<div class="member-photo">
+							<img class="img-fluid" src="images/team/team-4.jpg" alt="Meghna">
+							<div class="mask">
+								<ul class="list-inline">
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-facebook"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-twitter"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i class="tf-ion-social-linkedin"></i></a>
+									</li>
+									<li class="list-inline-item"><a href="#"><i
+												class="tf-ion-social-dribbble-outline"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="member-meta">
+							<h4 class="h5">Mo. Kha. Alamgir</h4>
+							<span>Especialista en SEO</span>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur necessitatibus ullam,
+								culpa odio.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="blog" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="title text-center wow fadeInDown">
+						<h2> Últimas <span class="color">Noticias</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms">
+					<div class="post-block">
+						<div class="media-wrapper">
+							<img src="img/5.webp" alt="amazing caves coverimage" class="img-fluid">
+						</div>
+						<div class="content">
+							<h3><a href="blog.html">Innovación en construcción sostenible</a></h3>
+							<p>Descubre cómo implementamos tecnologías verdes y materiales sostenibles en nuestros
+								proyectos más recientes para reducir el impacto ambiental.</p>
+							<!-- <a class="btn btn-transparent" href="blog-single.html">Leer más</a> -->
+						</div>
+					</div>
+				</article>
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="200ms">
+					<div class="post-block">
+						<div id="gallery-post" class="media-wrapper">
+							<!-- <div class="item">
+								<img src="img/6.webp" alt="blog post" class="img-fluid">
+							</div>
+							<div class="">
+								<img src="img/11.webp" alt="blog post" class="img-fluid">
+							</div> -->
+							<div class="item">
+								<img src="img/8.webp" alt="blog post | Meghna" class="img-fluid">
+							</div>
+						</div>
+
+						<div class="content">
+							<h3><a href="blog.html">Proyectos industriales de vanguardia</a></h3>
+							<p>Conoce los desafíos y soluciones innovadoras que aplicamos en proyectos de ingeniería
+								industrial para sectores estratégicos.</p>
+							<!-- <a class="btn btn-transparent" href="blog-single.html">Leer más</a> -->
+						</div>
+					</div>
+				</article>
+				<article class="col-lg-4 col-md-6 wow fadeInUp" data-wow-duration="500ms" data-wow-delay="400ms">
+					<div class="post-block">
+						<div class="media-wrapper">
+							<img src="img/5.webp" alt="amazing caves coverimage" class="img-fluid">
+						</div>
+
+						<div class="content">
+							<h3><a href="blog.html">El futuro de las telecomunicaciones</a></h3>
+							<p>Exploramos las últimas tendencias en infraestructura de telecomunicaciones y cómo
+								transforman la conectividad empresarial y residencial.</p>
+						</div>
+					</div>
+				</article>
+				<div class="col-12">
+					<!-- <div class="all-post text-center">
+						<a class="btn btn-main" href="blog.html">Ver todas las publicaciones</a>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="contact-us" class="contact-us section-bg">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-12">
+					<div class="title text-center wow fadeIn" data-wow-duration="500ms">
+						<h2>Ponte en <span class="color">Contacto</span></h2>
+						<div class="border"></div>
+					</div>
+				</div>
+
+				<div class="contact-info col-lg-6 wow fadeInUp" data-wow-duration="500ms">
+					<h3>Detalles de contacto</h3>
+					<p>¿Tienes un proyecto en mente? Nuestro equipo de expertos está listo para asesorarte y transformar
+						tu visión en realidad. Contáctanos para una consulta sin compromiso.</p>
+					<div class="contact-details">
+						<div class="con-info clearfix">
+							<i class="tf-map-pin"></i>
+							<span>Dirección Luxembourg: Rue León Laval 3372, Luxembourg, Luxembourg
+
+							</span>
+						</div>
+
+						<div class="con-info clearfix">
+							<i class="tf-ion-ios-telephone-outline"></i>
+							<span>Teléfono: +34 123 456 789</span>
+						</div>
+
+						<div class="con-info clearfix">
+							<i class="tf-ion-iphone"></i>
+							<span>Email: comunicaciones@apexconstrutech.com</span>
+						</div>
+
+						<div class="con-info clearfix">
+							<i class="tf-ion-ios-email-outline"></i>
+							<span>Web: apexconstrutech.com</span>
+						</div>
+					</div>
+				</div>
+				<div class="contact-form col-lg-6 mt-4 mt-lg-0 wow fadeInUp" data-wow-duration="500ms"
+					data-wow-delay="300ms">
+					<form id="contact-form" method="post" action="sendmail.php" role="form">
+
+						<div class="form-group">
+							<input type="text" placeholder="Tu nombre" class="form-control" name="name" id="name">
+						</div>
+
+						<div class="form-group">
+							<input type="email" placeholder="Tu correo electrónico" class="form-control" name="email"
+								id="email">
+						</div>
+
+						<div class="form-group">
+							<input type="text" placeholder="Asunto" class="form-control" name="subject" id="subject">
+						</div>
+
+						<div class="form-group">
+							<textarea rows="6" placeholder="Mensaje" class="form-control" name="message"
+								id="message"></textarea>
+						</div>
+
+						<div id="cf-submit">
+							<input type="submit" id="contact-submit" class="btn btn-transparent" value="Enviar">
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="google-map">
+			<div id="map_canvas" data-latitude="51.507351" data-longitude="-0.127758"></div>
+		</div>
+	</section>
+	
+	<footer id="footer" class="bg-one">
+		<div class="container">
+			<div class="row wow fadeInUp" data-wow-duration="500ms">
+				<div class="col-lg-12">
+
+					<!-- Información de contacto -->
+					<div class="footer-info mb-2">
+						<div class="row">
+							<div class="col-md-4 text-center text-md-left mb-3">
+								<h5 style="color: #f9d100; font-weight: bold;">Luxemburgo</h5>
+								<p class="mb-1"><i class="tf-ion-ios-location"></i> Rue Léon Laval 3372</p>
+								<p>Luxembourg, Luxembourg</p>
+							</div>
+							<div class="col-md-4 text-center mb-3">
+								<h5 style="color: #f9d100; font-weight: bold;">Alemania</h5>
+								<p class="mb-1"><i class="tf-ion-ios-location"></i> Maybachstrasse 37</p>
+								<p>51381 Leverkusen, Germany</p>
+							</div>
+							<div class="col-md-4 text-center text-md-right mb-3">
+								<h5 style="color: #f9d100; font-weight: bold;">España</h5>
+								<p class="mb-1"><i class="tf-ion-ios-location"></i> Miguel de Geneto 5</p>
+								<p>38296 Santa Cruz de Tenerife, Spain</p>
+							</div>
+						</div>
+						<div class="row mt-1">
+							<div class="col-md-12 text-center">
+								<p class="mb-1">
+									<i class="tf-ion-ios-telephone"></i> +34 123 456 789 |
+									<i class="tf-ion-ios-email"></i> comunicaciones@apexconstrutech.com
+								</p>
+								<p><i class="tf-ion-android-globe"></i> www.apexconstrutech.com</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Redes sociales -->
+					<div class="social-icon">
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="https://facebook.com/apexconstrutech"
+									target="_blank"><i class="tf-ion-social-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="https://instagram.com/apexconstrutech"
+									target="_blank"><i class="tf-ion-social-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="https://linkedin.com/company/apexconstrutech"
+									target="_blank"><i class="tf-ion-social-linkedin"></i></a></li>
+							<li class="list-inline-item"><a href="https://youtube.com/@ApexConstrutechChannel"
+									target="_blank"><i class="tf-ion-social-youtube"></i></a></li>
+							<li class="list-inline-item"><a href="https://twitter.com/apexconstrutech"
+									target="_blank"><i class="tf-ion-social-twitter"></i></a></li>
+						</ul>
+					</div>
+
+					<!-- Logo y copyright -->
+					<div class="copyright text-center">
+						<a class="navbar-brand logo" href="index.html">
+							<span class="logo-apex">Apex</span><span class="logo-line">|</span><span
+								class="logo-construtech">Construtech</span>
+						</a>
+
+						<p class="mt-3">
+							<strong>Apex Obras y Telecomunicaciones SL</strong><br>
+							NIF: B19962208
+						</p>
+						<p>Copyright &copy;
+							<script>document.write(new Date().getFullYear())</script>
+							Apex Construtech. Todos los derechos reservados.
+						</p>
+						<p class="text-muted" style="font-size: 0.85em;">
+							Construcción | Ingeniería Industrial | Telecomunicaciones
+						</p>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="plugins/jquery/jquery.min.js"></script>
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<script src="plugins/slick-carousel/slick.min.js"></script>
+	<script src="plugins/filterzr/jquery.filterizr.min.js"></script>
+	<script src="plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAgeuuDfRlweIs7D6uo4wdIHVvJ0LonQ6g"></script>
+	<script src="plugins/google-map/gmap.js"></script>
+	<script src="plugins/wow/wow.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		// Language switcher functionality
+document.addEventListener('DOMContentLoaded', function() {
+    const languageLinks = document.querySelectorAll('[data-lang]');
+    const languageButton = document.getElementById('languageDropdown');
+    
+    languageLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            
+            // Update button text
+            const flags = { es: '🇪🇸 ES', en: '🇬🇧 EN', de: '🇩🇪 DE' };
+            languageButton.innerHTML = `<i class="fas fa-globe"></i> ${flags[lang].split(' ')[1]}`;
+            
+            // Store language preference
+            localStorage.setItem('selectedLanguage', lang);
+            
+            // Here you would implement your language change logic
+            changeLanguage(lang);
+        });
+    });
+    
+    // Load saved language on page load
+    const savedLang = localStorage.getItem('selectedLanguage') || 'es';
+    changeLanguage(savedLang);
+});
+
+function changeLanguage(lang) {
+    // Implement your language switching logic here
+    console.log('Language changed to:', lang);
+}
+
+	</script>
+
+</body>
+
+</html>
