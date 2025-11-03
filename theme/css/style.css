@@ -9,12 +9,12 @@
 @import url("https://fonts.googleapis.com/css?family=Anaheim|Quattrocento+Sans:400,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600");
 html {
-  background-color: #353b43;
+  background-color: #1e1e1e;
   color: #737f8a;
 }
 
 body {
-  background-color: #353b43;
+  background-color: #1e1e1e;
   font-family: "Anaheim", sans-serif;
   color: #737f8a;
   -webkit-font-smoothing: antialiased;
@@ -501,7 +501,7 @@ a:hover {
   Navigation
 ==================================================================*/
 .navigation {
-  background-color: #1d2024;
+  background-color: #214163; /* Azul oscuro - mantiene el color actual */
   width: 100%;
   z-index: 99;
   margin-bottom: 0;
@@ -509,35 +509,42 @@ a:hover {
   position: sticky;
   top: 0;
 }
+
 .navigation .logo {
   padding: 0;
   height: auto;
   margin-top: 0;
 }
+
 .navigation .logo img {
   height: auto;
   width: 140px;
 }
+
 .navigation .navigation-menu li a.active {
-  color: #57cbcc !important;
+  color: #f9d100 !important; /* Amarillo para enlaces activos */
 }
+
 .navigation .navigation-menu a {
   padding-left: 15px !important;
   padding-right: 15px !important;
   font-size: 16px;
-  color: #737f8a;
+  color: #ffffff; /* Blanco para contraste con el fondo azul oscuro */
 }
-.navigation .navigation-menu a:hover, .navigation .navigation-menu a:focus {
+
+.navigation .navigation-menu a:hover, 
+.navigation .navigation-menu a:focus {
   background: transparent;
-  color: #57cbcc !important;
+  color: #f9d100 !important; /* Amarillo en hover */
 }
 
 .navbar-toggle {
-  border: 1px solid #fff;
+  border: 1px solid #f9d100; /* Amarillo para el borde del toggle */
   border-radius: 0;
 }
+
 .navbar-toggle span {
-  background: #fff;
+  background: #f9d100; /* Amarillo para las barras del toggle */
 }
 
 .bg-1 {
@@ -562,12 +569,14 @@ a:hover {
   align-items: center;
   overflow: hidden;
 }
+
 .hero-area .block {
   text-align: center;
   z-index: 99;
 }
+
 .hero-area .block .video-button a {
-  background: #fff;
+  background: #f9d100; /* Amarillo para el botón de video */
   display: inline-block;
   height: 60px;
   width: 60px;
@@ -575,8 +584,9 @@ a:hover {
   line-height: 60px;
   font-size: 20px;
   margin-left: 3px;
-  color: #57cbcc;
+  color: #214163; /* Azul oscuro para el ícono */
 }
+
 .hero-area .block h1 {
   font-size: 90px;
   color: #fff;
@@ -584,30 +594,40 @@ a:hover {
   font-weight: 700;
   margin-bottom: 20px;
 }
+
 @media (max-width: 992px) {
   .hero-area .block h1 {
     font-size: 60px;
   }
 }
+
 @media (max-width: 768px) {
   .hero-area .block h1 {
     font-size: 48px;
   }
 }
+
 .hero-area .block p {
   color: #fff;
   font-size: 20px;
   width: 70%;
   margin: 0 auto;
 }
+
 .hero-area .block .btn-transparent {
   margin-top: 40px;
-  border-color: #fff;
+  border-color: #f9d100; /* Amarillo para el borde del botón */
+  color: #f9d100; /* Amarillo para el texto del botón */
   padding: 14px 50px;
   font-size: 18px;
   font-size: 16px;
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.hero-area .block .btn-transparent:hover {
+  background-color: #f9d100; /* Amarillo de fondo en hover */
+  color: #214163; /* Azul oscuro para el texto en hover */
 }
 
 .hero-video {
@@ -634,29 +654,33 @@ a:hover {
 }
 
 .dark-bg {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(30, 30, 30, 0.85); /* Negro neutro con transparencia */
   height: 100%;
   width: 100%;
   position: absolute;
   z-index: -1;
 }
 
+
 /*=================================================================
   About us section
 ==================================================================*/
 .about .block {
-  background: #242930;
+  background: #1e1e1e; /* Negro neutro */
   padding: 30px;
   border-bottom: 2px solid transparent;
   transition: 0.5s all;
   margin-bottom: 20px;
 }
+
 .about .block:hover {
-  border-bottom: 2px solid #57cbcc;
+  border-bottom: 2px solid #f9d100; /* Amarillo */
 }
+
 .about .block:hover .icon-box {
   transform: translateY(-10px);
 }
+
 .about .block .icon-box {
   position: relative;
   width: 160px;
@@ -664,14 +688,17 @@ a:hover {
   background-color: transparent;
   margin: 46.19px auto 60px;
   padding: 20px 0;
-  border-left: 2px solid rgba(236, 239, 241, 0.07);
-  border-right: 2px solid rgba(236, 239, 241, 0.07);
+  border-left: 2px solid rgba(255, 255, 255, 0.1); /* Blanco con transparencia */
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
+  color: #f9d100; /* Amarillo para iconos */
   font-size: 50px;
   transform: translateZ(0px);
   transition-duration: 0.3s;
   transition-property: transform;
 }
-.about .block .icon-box:after, .about .block .icon-box:before {
+
+.about .block .icon-box:after, 
+.about .block .icon-box:before {
   content: "";
   position: absolute;
   z-index: 1;
@@ -681,18 +708,21 @@ a:hover {
   left: 20.4315px;
   transform: scaleY(0.5774) rotate(-45deg);
 }
+
 .about .block .icon-box:before {
   top: -56.5685px;
-  border-top: 2px solid rgba(236, 239, 241, 0.07);
-  border-right: 2px solid rgba(236, 239, 241, 0.07);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
+  border-right: 2px solid rgba(255, 255, 255, 0.1);
 }
+
 .about .block .icon-box:after {
   bottom: -56.5685px;
-  border-bottom: 2px solid rgba(236, 239, 241, 0.07);
-  border-left: 2px solid rgba(236, 239, 241, 0.07);
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  border-left: 2px solid rgba(255, 255, 255, 0.1);
 }
+
 .about .block .icon-box h3 {
-  color: #afbac4;
+  color: #ffffff; /* Blanco para títulos */
 }
 
 /*=================================================================
@@ -701,21 +731,26 @@ a:hover {
 .about-2 .content-block {
   padding: 35px 40px;
 }
+
 @media (max-width: 768px) {
   .about-2 .content-block {
     padding: 40px 15px;
   }
 }
+
 .about-2 .content-block .media .pull-left {
   padding-right: 15px;
 }
+
 .about-2 .content-block .media {
   margin-top: 25px;
 }
+
 .about-2 .content-block .media i {
   font-size: 30px;
-  color: #57cbcc;
+  color: #f9d100; /* Amarillo para iconos */
 }
+
 .about-2 .content-block .media h4 {
   font-size: 16px;
   font-weight: 600;
@@ -727,14 +762,17 @@ a:hover {
 .call-to-action {
   background-attachment: fixed;
 }
+
 .call-to-action h2 {
   font-weight: 700;
-  color: #444;
+  color: #1e1e1e; /* Negro neutro */
 }
+
 .call-to-action p {
   font-size: 16px;
-  color: #666;
+  color: #444;
 }
+
 .call-to-action .btn-main {
   margin-top: 20px;
 }
@@ -748,12 +786,15 @@ a:hover {
   background-size: cover;
   color: #fff;
 }
+
 .call-to-action-2 h2 {
   line-height: 1.5;
 }
+
 .call-to-action-2 p {
   color: #fff;
 }
+
 .call-to-action-2 .btn-main {
   margin-top: 20px;
 }
@@ -765,11 +806,14 @@ a:hover {
 .contact-form {
   margin-bottom: 60px;
 }
+
 .contact-form .form-control {
   background-color: transparent;
-  border: 1px solid rgba(236, 239, 241, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Blanco con transparencia */
+  color: #ffffff;
   height: 45px;
 }
+
 .contact-form textarea.form-control {
   padding: 10px;
   height: 120px;
@@ -778,15 +822,23 @@ a:hover {
 .contact-form input:hover,
 .contact-form textarea:hover,
 #contact-submit:hover {
-  border-color: #57cbcc;
+  border-color: #f9d100; /* Amarillo en hover */
 }
 
 #contact-submit {
-  border: 1px solid rgba(236, 239, 241, 0.07);
-  background: #57cbcc;
+  border: 1px solid #f9d100;
+  background: #f9d100; /* Amarillo */
+  color: #214163; /* Azul oscuro para el texto */
   padding: 12px 0;
   width: 100%;
   margin: 0;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#contact-submit:hover {
+  background: #214163; /* Azul oscuro en hover */
+  color: #f9d100; /* Amarillo para texto en hover */
 }
 
 .google-map #map_canvas {
@@ -820,12 +872,13 @@ a:hover {
 }
 
 .success {
-  background-color: #6cb670;
+  background-color: #f9d100; /* Amarillo */
   border-radius: 4px;
-  color: #fff;
+  color: #214163; /* Azul oscuro para contraste */
   display: none;
   font-size: 13px;
   padding: 10px;
+  font-weight: bold;
 }
 
 #map {
@@ -839,61 +892,79 @@ a:hover {
 .counters-item {
   padding: 25px 0;
   margin-bottom: 10px;
-  background: #292F36;
+  background: #214163; /* Azul oscuro */
+  color: #ffffff;
 }
+
 .counters-item i {
   margin-bottom: 10px;
   font-size: 40px;
+  color: #f9d100; /* Amarillo para iconos */
   display: inline-block;
 }
+
 .counters-item span {
   display: block;
   font-weight: bold;
   font-size: 35px;
   line-height: 50px;
+  color: #f9d100; /* Amarillo */
 }
+
 .counters-item h3 {
   font-size: 20px;
   margin: 0;
+  color: #ffffff;
 }
 
 /*=================================================================
   Pricing section
 ==================================================================*/
 .price-item {
-  border: 1px solid rgba(236, 239, 241, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   padding-bottom: 30px;
   margin: 15px 0;
+  background: #1e1e1e; /* Negro neutro */
 }
 
 .price-title {
-  background-color: #292F36;
+  background-color: #214163; /* Azul oscuro */
   padding: 30px 0 20px;
 }
+
 .price-title h3 {
-  color: #57cbcc;
+  color: #f9d100; /* Amarillo */
   margin: 0 0 10px;
   text-transform: uppercase;
+  font-weight: bold;
 }
+
 .price-title p {
   font-size: 18px;
   font-weight: 400;
+  color: #ffffff;
 }
+
 .price-title .value {
-  color: #57cbcc;
+  color: #f9d100; /* Amarillo */
   font-size: 30px;
+  font-weight: bold;
 }
 
 .pricing li {
   padding: 10px 0;
+  color: #ffffff;
 }
+
 .pricing li:last-child {
-  border-bottom: 1px solid rgba(236, 239, 241, 0.07);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin-bottom: 20px;
 }
+
 .pricing li:nth-child(2n) {
-  background-color: #292F36;
+  background-color: #1e1e1e; /* Negro neutro */
 }
+
 .pricing li .btn {
   text-transform: uppercase;
   margin: 20px 0;
@@ -906,21 +977,29 @@ a:hover {
   margin-bottom: 20px;
   text-align: center;
 }
+
 .portfolio-filter button {
   border: none;
   outline: none;
-  border: 1px solid rgba(236, 239, 241, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   background: transparent;
   display: inline-block;
   font-size: 16px;
   padding: 6px 20px;
   font-weight: 700;
-  color: #737f8a;
+  color: #ffffff;
   transition: 0.3s all;
 }
+
+.portfolio-filter button:hover {
+  border-color: #f9d100;
+  color: #f9d100;
+}
+
 .portfolio-filter button.active {
-  border: 1px solid #57cbcc;
-  color: #57cbcc;
+  border: 1px solid #f9d100; /* Amarillo */
+  background: #f9d100;
+  color: #214163; /* Azul oscuro */
 }
 
 .portfolio-items-wrapper .mix {
@@ -931,9 +1010,10 @@ a:hover {
   position: relative;
   margin-top: 30px;
 }
+
 .portfolio-block:before {
   transition: all 0.3s ease-in-out;
-  background: rgb(255, 255, 255);
+  background: rgb(33, 65, 99); /* Azul oscuro */
   opacity: 0;
   top: 20px;
   right: 20px;
@@ -942,20 +1022,25 @@ a:hover {
   position: absolute;
   content: "";
 }
+
 .portfolio-block img {
   width: 100%;
   height: auto;
 }
+
 .portfolio-block:hover:before {
-  opacity: 1;
+  opacity: 0.95;
 }
+
 .portfolio-block:hover .caption h4 {
   top: 45%;
 }
+
 .portfolio-block:hover .caption {
   opacity: 1;
   top: 50%;
 }
+
 .portfolio-block .caption {
   position: absolute;
   top: 60%;
@@ -967,72 +1052,119 @@ a:hover {
   text-align: center;
   width: 80%;
 }
+
 .portfolio-block .caption h4 {
   font-size: 16px;
   font-weight: 600;
 }
+
 .portfolio-block .caption h4 a {
-  color: #555;
+  color: #ffffff; /* Blanco para títulos */
 }
+
 .portfolio-block .caption .search-icon {
-  background: #57cbcc;
+  background: #f9d100; /* Amarillo */
   width: 45px;
   height: 45px;
-  color: #fff;
+  color: #214163; /* Azul oscuro */
   display: inline-block;
   font-size: 20px;
   border-radius: 30px;
   margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
+
+.portfolio-block .caption .search-icon:hover {
+  background: #ffffff; /* Blanco en hover */
+  color: #214163;
+  transform: scale(1.1);
+}
+
 .portfolio-block .caption .search-icon i {
   line-height: 45px;
 }
+
 
 /*=================================================================
   Services section
 ==================================================================*/
 .service-block {
   padding: 60px 20px;
-  border-left: 1px solid rgba(236, 239, 241, 0.07);
-  border-top: 1px solid rgba(236, 239, 241, 0.07);
+  border-left: 1px solid rgba(249, 209, 0, 0.2); /* Amarillo con transparencia */
+  border-top: 1px solid rgba(249, 209, 0, 0.2);
   margin-bottom: 40px;
-  box-shadow: 2px 2px 5px rgba(44, 44, 44, 0.3), 13px 13px 0 rgba(255, 255, 255, 0.7);
+  background: #1e1e1e; /* Negro neutro */
+  box-shadow: 2px 2px 5px rgba(30, 30, 30, 0.5), 
+              13px 13px 0 rgba(249, 209, 0, 0.3); /* Sombra con amarillo */
+  transition: all 0.3s ease;
 }
+
+.service-block:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 4px 10px rgba(30, 30, 30, 0.6), 
+              15px 15px 0 rgba(249, 209, 0, 0.5);
+}
+
 .service-block .service-icon {
   margin-bottom: 10px;
   font-size: 50px;
+  color: #f9d100; /* Amarillo para iconos */
+  transition: all 0.3s ease;
+}
+
+.service-block:hover .service-icon {
+  color: #ffffff; /* Blanco en hover */
+  transform: scale(1.1);
 }
 
 /*=================================================================
   Services section 2
 ==================================================================*/
 .service-2 .service-item {
-  border: 1px solid #eee;
+  border: 1px solid rgba(249, 209, 0, 0.3); /* Borde amarillo */
+  background: #1e1e1e; /* Negro neutro */
   margin-bottom: 30px;
   padding: 50px 20px;
   transition: all 0.3s ease 0s;
 }
+
 .service-2 .service-item:hover {
-  box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
-  -webkit-box-shadow: 0 5px 65px 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 65px 0 rgba(249, 209, 0, 0.25); /* Sombra amarilla */
+  -webkit-box-shadow: 0 5px 65px 0 rgba(249, 209, 0, 0.25);
+  border-color: #f9d100; /* Borde amarillo sólido en hover */
+  transform: translateY(-5px);
 }
+
 .service-2 .service-item:hover i {
-  background: #fff;
-  color: #57cbcc;
+  background: #ffffff; /* Blanco en hover */
+  color: #214163; /* Azul oscuro para el ícono */
+  transform: rotate(360deg) scale(1.1);
 }
+
 .service-2 .service-item i {
   font-size: 30px;
   display: inline-block;
-  background: #57cbcc none repeat scroll 0 0;
+  background: #f9d100 none repeat scroll 0 0; /* Amarillo */
   border-radius: 30px;
-  box-shadow: 0 5px 6px 0 rgba(0, 0, 0, 0.1);
-  color: #fff;
+  box-shadow: 0 5px 15px 0 rgba(249, 209, 0, 0.4); /* Sombra amarilla */
+  color: #214163; /* Azul oscuro para el ícono */
   height: 55px;
   line-height: 55px;
   margin-bottom: 20px;
   width: 55px;
-  transition: all 0.3s ease 0s;
+  transition: all 0.4s ease 0s;
 }
+
+.service-2 .service-item h3 {
+  color: #ffffff; /* Blanco para títulos */
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.service-2 .service-item p {
+  color: rgba(255, 255, 255, 0.8); /* Blanco con transparencia */
+}
+
 
 /*=================================================================
   Our skills
@@ -1040,21 +1172,30 @@ a:hover {
 .skill-bar p {
   font-size: 18px;
   margin-bottom: 0;
+  color: #ffffff; /* Blanco para texto */
 }
+
 .skill-bar p span {
   font-style: italic;
   font-size: 30px;
-  color: rgba(187, 187, 187, 0.34);
+  color: rgba(249, 209, 0, 0.5); /* Amarillo con transparencia */
   display: inline-block;
   vertical-align: middle;
 }
+
 .skill-bar .progress {
   height: 6px;
-  border-radius: 0;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.1); /* Fondo blanco translúcido */
+  overflow: hidden;
 }
+
 .skill-bar .progress .progress-bar {
-  background: #57cbcc;
+  background: linear-gradient(90deg, #f9d100 0%, #214163 100%); /* Gradiente amarillo a azul */
+  transition: width 0.6s ease;
+  border-radius: 3px;
 }
+
 .skill-bar li:not(:last-child) {
   margin-bottom: 25px;
 }
@@ -1063,9 +1204,17 @@ a:hover {
   Our Team
 ==================================================================*/
 .team-member {
-  background-color: #292F36;
+  background-color: #1e1e1e; /* Negro neutro */
   margin: 15px 0;
+  border: 1px solid rgba(249, 209, 0, 0.2); /* Borde amarillo sutil */
+  transition: all 0.3s ease;
 }
+
+.team-member:hover {
+  border-color: #f9d100; /* Borde amarillo sólido en hover */
+  box-shadow: 0 5px 30px rgba(249, 209, 0, 0.3);
+}
+
 .team-member:hover .mask {
   cursor: pointer;
   opacity: 1;
@@ -1077,24 +1226,32 @@ a:hover {
   overflow: hidden;
   position: relative;
 }
+
 @media (max-width: 768px) {
   .member-photo {
     text-align: center;
   }
 }
+
 .member-photo:hover img {
   transform: scale(1.2);
+  filter: brightness(0.7);
 }
+
 .member-photo img {
   transition: all 0.4s ease 0s;
+  display: block;
+  width: 100%;
 }
+
 @media (max-width: 768px) {
   .member-photo img {
     display: inline-block;
   }
 }
+
 .member-photo .mask {
-  background-color: rgba(87, 203, 204, 0.7);
+  background: linear-gradient(135deg, rgba(33, 65, 99, 0.9) 0%, rgba(249, 209, 0, 0.9) 100%); /* Gradiente azul oscuro a amarillo */
   position: absolute;
   text-align: center;
   height: 100%;
@@ -1106,35 +1263,54 @@ a:hover {
   transition: all 0.5s ease-out 0s;
   transform: rotateY(180deg) scale(0.5, 0.5);
 }
+
 .member-photo .mask ul {
   text-align: center;
   position: relative;
   top: 125px;
 }
+
+.member-photo .mask ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
 .member-photo .mask ul li a {
-  border: 1px solid #fff;
-  color: #fff;
+  border: 2px solid #ffffff; /* Borde blanco */
+  color: #ffffff; /* Iconos blancos */
   display: block;
   font-size: 20px;
   height: 35px;
   line-height: 35px;
   text-align: center;
   width: 35px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
 }
+
 .member-photo .mask ul li a:hover {
-  background-color: #fff;
-  color: #57cbcc;
-  border: 1px solid transparent;
+  background-color: #f9d100; /* Amarillo en hover */
+  color: #214163; /* Azul oscuro para ícono */
+  border: 2px solid #f9d100;
+  transform: scale(1.2) rotate(360deg);
 }
 
 .member-meta {
   padding: 15px;
+  background-color: #1e1e1e;
 }
+
 .member-meta h4 {
   margin: 0 0 5px;
+  color: #f9d100; /* Amarillo para nombres */
+  font-weight: bold;
 }
+
 .member-meta span {
   font-size: 12px;
+  color: rgba(255, 255, 255, 0.7); /* Blanco translúcido para cargo */
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /*=================================================================
